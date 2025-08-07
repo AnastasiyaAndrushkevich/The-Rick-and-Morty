@@ -4,6 +4,7 @@ import { CharactersPage } from "./pages/CharactersPage/CharactersPage";
 import { EpisodesPage } from "./pages/EpisodesPage/EpisodesPage";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { LocationsPage } from "./pages/LocationsPage/LocationsPage";
+import { Character } from "./pages/CharactersPage/Character/Character";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/characters" element={<CharactersPage />} />
+        <Route path="/characters/:id" element={<Character />} />
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/episodes" element={<EpisodesPage />} />
       </Routes>
